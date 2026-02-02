@@ -24992,6 +24992,35 @@
             updateTimer();
             const interval = setInterval(updateTimer, 1e3);
         });
+        const popup = document.querySelector(".footer__subscribe.subscribe");
+        if (popup) {
+            document.body.appendChild(popup);
+            const closeBtn = popup.querySelector(".subscribe__close");
+            const REPEAT_DELAY = 12e4;
+            let repeatTimeout;
+            const overlay = document.createElement("div");
+            overlay.className = "subscribe-overlay";
+            document.body.appendChild(overlay);
+            function showPopup() {
+                popup.classList.add("is-active");
+                overlay.classList.add("is-active");
+            }
+            function hidePopup() {
+                popup.classList.remove("is-active");
+                overlay.classList.remove("is-active");
+                clearTimeout(repeatTimeout);
+                repeatTimeout = setTimeout(showPopup, REPEAT_DELAY);
+            }
+            if (closeBtn) closeBtn.addEventListener("click", hidePopup);
+            overlay.addEventListener("click", hidePopup);
+        }
+        const buttonTg = document.querySelector(".subscribe__link");
+        buttonTg.addEventListener("mousemove", function(e) {
+            const rect = this.getBoundingClientRect();
+            const y = (e.clientY - rect.top) / rect.height;
+            const angle = y * 180;
+            this.style.background = `linear-gradient(${angle}deg, #152c24 0%, #0e1311 100%)`;
+        });
     });
     window["FLS"] = false;
     tabs();
