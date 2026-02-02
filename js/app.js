@@ -24996,7 +24996,9 @@
         if (popup) {
             document.body.appendChild(popup);
             const closeBtn = popup.querySelector(".subscribe__close");
+            const FIRST_DELAY = 1e4;
             const REPEAT_DELAY = 12e4;
+            let showTimeout;
             let repeatTimeout;
             const overlay = document.createElement("div");
             overlay.className = "subscribe-overlay";
@@ -25011,6 +25013,7 @@
                 clearTimeout(repeatTimeout);
                 repeatTimeout = setTimeout(showPopup, REPEAT_DELAY);
             }
+            showTimeout = setTimeout(showPopup, FIRST_DELAY);
             if (closeBtn) closeBtn.addEventListener("click", hidePopup);
             overlay.addEventListener("click", hidePopup);
         }
