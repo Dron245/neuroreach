@@ -892,7 +892,7 @@ body::after {
   padding: 3.125rem;
   box-shadow: 0 3.125rem 3.125rem -1.25rem rgba(0,0,0,.25);
   background: linear-gradient(0deg,rgba(50,112,103,.2) 0,rgba(50,112,103,0) 26.44%,rgba(50,112,103,0) 58.17%,rgba(50,112,103,.2) 100%);
-  background: #000;
+  background: #161d1a;
   opacity: 0;
   visibility: hidden;
   transition: opacity .4s ease,visibility .4s,-webkit-transform .5s ease;
@@ -950,7 +950,9 @@ body::after {
   margin-top: 11.875rem;
   border-radius: .875rem;
   padding: 1.5rem 2.5rem;
-  max-width: 15.875rem;
+  max-width: 290px;
+  width: 100%;
+  text-align: center;
   margin-inline: auto;
   font-weight: 600;
   font-size: 1.125rem;
@@ -2975,8 +2977,8 @@ p.orientiry[class] {
     padding: 30px
   }
   .popup__close {
-    top: 0;
-    right: 30px
+    top: 15px;
+    right: 20px
   }
   .form__btn-pc {
     display: none
@@ -3365,7 +3367,7 @@ p.orientiry[class] {
 }
 @media (width <= 48rem) {
   .subscribe {
-    padding: 1.875rem
+    padding: 30px
   }
   .subscribe {
     width: 80%
@@ -3382,7 +3384,7 @@ p.orientiry[class] {
 }
 @media (width <= 36rem) {
   .subscribe {
-    padding-top: 3.75rem
+    padding-top: 60px
   }
 }
 @media (width <= 48rem) and (width <= 36rem) {
