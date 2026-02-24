@@ -200,11 +200,11 @@ html {
   top: 0;
   left: 0;
   z-index: 1;
-  background: url(../img/fon3.svg) center 0 no-repeat;
+  background: url(../img/fon3.webp) center 0 no-repeat;
   background-size: cover
 }
 .wrapper:has(.auction)::before {
-  background: url(../img/fon-auction.svg) center 0/cover no-repeat
+  background: url(../img/fon-auction.webp) center 0/cover no-repeat
 }
 @supports (overflow:clip) {
   .wrapper {
@@ -2939,10 +2939,10 @@ p.orientiry[class] {
 }
 @media (width <= 36em) {
   .wrapper::before {
-    background: url(../img/razm380-2.svg) center 0/cover no-repeat
+    background: url(../img/razm380-2.webp) center 0/cover no-repeat
   }
   .wrapper:has(.auction)::before {
-    background: url(../img/fon-auction-mobile.svg) center 0/cover no-repeat
+    background: url(../img/fon-auction-mobile.webp) center 0/cover no-repeat
   }
   .loader__title {
     width: 80vw
