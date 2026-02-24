@@ -3476,27 +3476,10 @@ p.orientiry[class] {
     display: none
   }
 }
-@media (width <= 992px) {
+@media (768px < width <= 992px) {
   .footer__container {
     grid-template-columns: repeat(2,1fr);
     align-items: start
-  }
-  .philosophy__body .lider__item {
-    padding: 30px 20px 20px
-  }
-  .philosophy__body .lider__item-text {
-    font-size: 18px
-  }
-  .steps .lider__item {
-    padding: 30px 20px 20px
-  }
-  .qa__content {
-    flex-direction: column;
-    gap: 50px
-  }
-  .qa .form {
-    background: 0 0;
-    box-shadow: none
   }
 }
 @media (width > 56.25rem) {
@@ -3864,6 +3847,25 @@ p.orientiry[class] {
     flex-direction: column;
     max-width: 60%;
     margin-inline: auto
+  }
+}
+@media (width <= 992px) {
+  .philosophy__body .lider__item {
+    padding: 30px 20px 20px
+  }
+  .philosophy__body .lider__item-text {
+    font-size: 18px
+  }
+  .steps .lider__item {
+    padding: 30px 20px 20px
+  }
+  .qa__content {
+    flex-direction: column;
+    gap: 50px
+  }
+  .qa .form {
+    background: 0 0;
+    box-shadow: none
   }
 }
 @media (width <= 992px) and (width > 768px) {
