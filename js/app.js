@@ -24996,10 +24996,7 @@
         if (popup) {
             document.body.appendChild(popup);
             const closeBtn = popup.querySelector(".subscribe__close");
-            const FIRST_DELAY = 1e4;
-            const REPEAT_DELAY = 12e4;
-            let showTimeout;
-            let repeatTimeout;
+            const DELAY = 12e4;
             const overlay = document.createElement("div");
             overlay.className = "subscribe-overlay";
             document.body.appendChild(overlay);
@@ -25010,12 +25007,13 @@
             function hidePopup() {
                 popup.classList.remove("is-active");
                 overlay.classList.remove("is-active");
-                clearTimeout(repeatTimeout);
-                repeatTimeout = setTimeout(showPopup, REPEAT_DELAY);
             }
-            showTimeout = setTimeout(showPopup, FIRST_DELAY);
+            setTimeout(showPopup, DELAY);
             if (closeBtn) closeBtn.addEventListener("click", hidePopup);
             overlay.addEventListener("click", hidePopup);
+            document.addEventListener("keydown", function(e) {
+                if (e.key === "Escape") hidePopup();
+            });
         }
         const buttonTg = document.querySelector(".subscribe__link");
         buttonTg.addEventListener("mousemove", function(e) {
@@ -25024,6 +25022,18 @@
             const angle = y * 180;
             this.style.background = `linear-gradient(${angle}deg, #152c24 0%, #0e1311 100%)`;
         });
+        const btnUp = document.querySelector(".footer__top");
+        if (btnUp) {
+            btnUp.addEventListener("click", function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 300) btnUp.classList.add("_visible"); else btnUp.classList.remove("_visible");
+            });
+        }
     });
     window["FLS"] = false;
     tabs();
