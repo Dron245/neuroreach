@@ -2,7 +2,7 @@
     var __webpack_modules__ = {
         43: function(module) {
             /**
- * lightgallery | 2.9.0-beta.1 | June 15th 2025
+ * lightgallery | 2.9.0 | October 1st 2025
  * http://www.lightgalleryjs.com/
  * Copyright (c) 2020 Sachin Neravath;
  * @license GPLv3
@@ -721,7 +721,7 @@
             }
         }, 0);
         /*!
- * lightgallery | 2.9.0-beta.1 | June 15th 2025
+ * lightgallery | 2.9.0 | October 1st 2025
  * http://www.lightgalleryjs.com/
  * Copyright (c) 2020 Sachin Neravath;
  * @license GPLv3
@@ -27020,6 +27020,23 @@ PERFORMANCE OF THIS SOFTWARE.
                 });
                 window.addEventListener("scroll", function() {
                     if (window.scrollY > 300) btnUp.classList.add("_visible"); else btnUp.classList.remove("_visible");
+                });
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            const wrapper = document.querySelector(".article__item_video");
+            const playBtn = document.getElementById("videoOverlay");
+            const iframe = document.getElementById("youtubeIframe");
+            if (wrapper && playBtn && iframe) {
+                const videoUrl = iframe.getAttribute("data-src");
+                const videoIdMatch = videoUrl.match(/\/embed\/([a-zA-Z0-9_-]+)/);
+                if (videoIdMatch && videoIdMatch[1]) {
+                    const videoId = videoIdMatch[1];
+                    wrapper.style.backgroundImage = `url('https://img.youtube.com/vi/${videoId}/maxresdefault.jpg')`;
+                }
+                playBtn.addEventListener("click", function() {
+                    playBtn.style.display = "none";
+                    iframe.setAttribute("src", videoUrl);
                 });
             }
         });
