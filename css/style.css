@@ -2633,9 +2633,6 @@ p.orientiry[class] {
 .qa__item.lider__item:not(:last-child) {
   margin-bottom: 20px
 }
-.qa__item.lider__item:first-child {
-  border-top: 1px solid rgba(255,255,255,.05)
-}
 .blog .page__main::before {
   top: -12px
 }
@@ -2820,9 +2817,6 @@ p.orientiry[class] {
 .article .qa {
   margin-top: 130px;
   padding-top: 70px
-}
-.article .qa::before {
-  top: 3px
 }
 .article__content {
   min-width: 0
@@ -5322,9 +5316,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     background: 0 0;
     box-shadow: none
   }
-  .article .qa::before {
-    top: 14px
-  }
 }
 @media (width <= 768px) {
   .philosophy__body .lider__item-img {
@@ -5498,11 +5489,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .pagination__link:active .pagination__text {
     color: #59ec65
-  }
-}
-@media (width <= 380px) {
-  .article .qa::before {
-    top: 26px
   }
 }
 @media (width > 62em) {
