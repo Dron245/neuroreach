@@ -26522,6 +26522,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 blinkNext();
             }
             initBlinking(".main .kvadrat rect:nth-of-type(1), .main .kvadrat rect:nth-of-type(6)", 10, 200, 2e3);
+            initBlinking(".promotion .kvadrat rect:nth-of-type(3), .promotion .kvadrat rect:nth-of-type(6), .promotion .kvadrat rect:nth-of-type(8)");
             initBlinking(".stadia .kvadrat rect:nth-of-type(3), .stadia .kvadrat rect:nth-of-type(6), .stadia .kvadrat rect:nth-of-type(8)");
             initBlinking(".lider .first-setka.kvadrat rect:nth-of-type(3), .lider .first-setka.kvadrat rect:nth-of-type(5), .lider .first-setka.kvadrat rect:nth-of-type(9)");
             initBlinking(".sun .kvadrat rect:nth-of-type(4), .sun .kvadrat rect:nth-of-type(5), .sun .kvadrat rect:nth-of-type(9)");
