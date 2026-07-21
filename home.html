@@ -18,7 +18,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20250923120625"> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20260713092100">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260721140538">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -110,6 +110,51 @@
 					<img src="img/logo.svg" alt="NeuroReach" />
 					<p class="header__logo-text">NeuroReach</p>
 				</a>
+				<div class="header__menu menu">
+					<button data-da=".header__menu-bottom, 768" type="button" class="menu__icon icon-menu">
+						<span></span>
+					</button>
+					<nav class="menu__body">
+						<svg class="menu__back" width="380" height="830" preserveAspectRatio="none" viewBox="0 0 380 830" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1880_1959)">
+								<g filter="url(#filter0_f_1880_1959)">
+									<path d="M136.376 296.939C76.8813 325.118 12.3694 364.931 12.3694 340.281C12.3694 315.631 -27.1444 217 35.0747 217C97.2939 217 327 296.727 327 321.377C327 346.027 198.595 296.939 136.376 296.939Z" fill="#37A193" fill-opacity="0.5" />
+								</g>
+								<g filter="url(#filter1_f_1880_1959)">
+									<path d="M262.047 261.863C312.394 240.741 327.817 135.578 331.103 162.275C334.388 188.971 409.798 314.951 359.451 336.073C309.104 357.195 107.826 326.805 104.54 300.109C101.255 273.412 211.701 282.985 262.047 261.863Z" fill="#F0E88F" fill-opacity="0.5" />
+								</g>
+								<g filter="url(#filter2_f_1880_1959)" style="mix-blend-mode: lighten">
+									<path d="M180.187 607C131.802 607 -2.17644e-06 574.524 -1.81907e-06 548.002C-1.4617e-06 521.48 54.6844 413 103.07 413C151.455 413 380 508.482 380 535.004C380 561.526 228.572 607 180.187 607Z" fill="#37A193" fill-opacity="0.35" />
+								</g>
+							</g>
+							<defs>
+								<filter id="filter0_f_1880_1959" x="-150" y="67" width="627" height="431" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+									<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_1880_1959" />
+								</filter>
+								<filter id="filter1_f_1880_1959" x="-45.5315" y="7.96313" width="572.255" height="485.183" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+									<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_1880_1959" />
+								</filter>
+								<filter id="filter2_f_1880_1959" x="-150" y="263" width="680" height="494" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+									<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_1880_1959" />
+								</filter>
+								<clipPath id="clip0_1880_1959">
+									<rect width="380" height="830" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="blog.html" class="menu__link"> Блог </a></li>
+							<li class="menu__item"><a href="auction.html" class="menu__link"> Аукцион </a></li>
+							<li class="menu__item"><a href="#" class="menu__link"> Кейсы </a></li>
+						</ul>
+					</nav>
+				</div>
 				<div class="header__contacts">
 					<div class="header__social">
 						<a data-da=".mobile__right, 768, 0" href="https://t.me/neuro_reach" target="_blank" class="header__social-link">
@@ -127,19 +172,25 @@
 						<a href="mailto:sale@neuroreach.ru" class="header__mail-link">sale@neuroreach.ru</a>
 					</div>
 					<div class="header__phone">
-						<a href="tel:+78002223821" class="header__phone-link">
-							8 (800) 222-38-21
-						</a>
+						<a href="tel:+78002223821" class="header__phone-link"> 8 (800) 222-38-21 </a>
 						<span class="header__phone-text">звонок по России бесплатный</span>
 					</div>
 				</div>
 			</div>
 			<div class="header__mobile mobile">
 				<div class="mobile__left">
-					<a href="mailto:sale@neuroreach.ru" class="mobile__link">
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-						</svg>
+					<!-- <a href="mailto:sale@neuroreach.ru" class="mobile__link">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</a> -->
+					<a class="header__menu-bottom">
+						<!-- <button type="button" class="menu__icon icon-menu"><span></span></button>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="" class="menu__link"></a></li>
+					</ul>
+				</nav> -->
 					</a>
 					<a href="tel:+78002223821" class="mobile__link">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1858,13 +1909,16 @@
 					<span class="item-footer__title">Адреса офисов</span>
 					<ul class="item-footer__list">
 						<li class="item-footer__item">
-							<a class="item-footer__link" target="_blank" href="https://yandex.ru/maps/2/saint-petersburg/house/sportivnaya_ulitsa_2/Z0kYdABgS0EEQFtjfXV3d3RiZw==/?ll=30.271658%2C59.965123&z=15.83">г. Санкт-Петербург,<br> ул. Спортивная, дом 2 стр 1</a>
+							<a class="item-footer__link" target="_blank" href="https://yandex.ru/maps/2/saint-petersburg/house/sportivnaya_ulitsa_2/Z0kYdABgS0EEQFtjfXV3d3RiZw==/?ll=30.271658%2C59.965123&z=15.83">г. Санкт-Петербург,<br />
+								ул. Спортивная, дом 2 стр 1</a>
 						</li>
 						<li class="item-footer__item">
-							<a class="item-footer__link" target="_blank" href="https://yandex.ru/maps/213/moscow/search/%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%A6%20%D0%90%D0%B2%D1%80%D0%BE%D1%80%D0%B0%20%20%D0%A1%D0%B0%D0%B4%D0%BE%D0%B2%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2082%2C%20%D1%81%D1%82%D1%80.%202/?ll=37.639837%2C55.734680&sctx=ZAAAAAgCEAAaKAoSCXr%2BtFGdUj5AEW4ZcJaS%2BU1AEhIJNLkYA%2Bs4yD8RxYzw9iAEuD8iBgABAgMEBSgKOABAt54BSAFiOnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL0N1c3RvbU1heGFkdi9FbmFibGVkPTFiOnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL0N1c3RvbU1heGFkdi9NYXhhZHY9MTViRHJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL0N1c3RvbU1heGFkdi9SZWdpb25JZHM9WzEsMTAxNzRdYkByZWFycj1zY2hlbWVfTG9jYWwvR2VvdXBwZXIvQWR2ZXJ0cy9NYXhhZHZUb3BNaXgvTWF4YWR2Rm9yTWl4PTEwagJydZ0BzczMPaABAKgBAL0BbBLU6MIBI4HE8N2HA%2BySxZfMBq%2FOxvzoAsKEjoj4BKz%2F%2FeH4Bey83uhRggJU0LMuINCc0L7RgdC60LLQsCwg0JHQpiDQkNCy0YDQvtGA0LAgINCh0LDQtNC%2B0LLQvdC40YfQtdGB0LrQsNGPINGD0LsuLCA4Miwg0YHRgtGALiAyigIAkgIDMjEzmgIMZGVza3RvcC1tYXBzqgKqATQ4Njc4MDgxMSw5ODUxMTQ1ODMsMjA5MDc5MzA3NjYzLDEzMTczMTkxNjg3OSwyNjAzNDg0ODk3LDIxMTM4NDQ2MDQyOSw2Njg2ODcxNDYwOSwyNjIwNjMwMTAxMSwxOTUwMzI2NjcwMDMsNjAwMzI1NCwxOTEzNDUxMjIxMzMsNjkxNDcyMzIwMTYsNjAwMjMyNiw3ODIxMTkzMzYxLDgyMDMxNjE0NDMxsAIB&sll=37.639837%2C55.734680&sspn=0.072708%2C0.040545&z=14.5">г. Москва,БЦ Аврора <br> Садовническая ул., 82, стр. 2</a>
+							<a class="item-footer__link" target="_blank" href="https://yandex.ru/maps/213/moscow/search/%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%A6%20%D0%90%D0%B2%D1%80%D0%BE%D1%80%D0%B0%20%20%D0%A1%D0%B0%D0%B4%D0%BE%D0%B2%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2082%2C%20%D1%81%D1%82%D1%80.%202/?ll=37.639837%2C55.734680&sctx=ZAAAAAgCEAAaKAoSCXr%2BtFGdUj5AEW4ZcJaS%2BU1AEhIJNLkYA%2Bs4yD8RxYzw9iAEuD8iBgABAgMEBSgKOABAt54BSAFiOnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL0N1c3RvbU1heGFkdi9FbmFibGVkPTFiOnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL0N1c3RvbU1heGFkdi9NYXhhZHY9MTViRHJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL0N1c3RvbU1heGFkdi9SZWdpb25JZHM9WzEsMTAxNzRdYkByZWFycj1zY2hlbWVfTG9jYWwvR2VvdXBwZXIvQWR2ZXJ0cy9NYXhhZHZUb3BNaXgvTWF4YWR2Rm9yTWl4PTEwagJydZ0BzczMPaABAKgBAL0BbBLU6MIBI4HE8N2HA%2BySxZfMBq%2FOxvzoAsKEjoj4BKz%2F%2FeH4Bey83uhRggJU0LMuINCc0L7RgdC60LLQsCwg0JHQpiDQkNCy0YDQvtGA0LAgINCh0LDQtNC%2B0LLQvdC40YfQtdGB0LrQsNGPINGD0LsuLCA4Miwg0YHRgtGALiAyigIAkgIDMjEzmgIMZGVza3RvcC1tYXBzqgKqATQ4Njc4MDgxMSw5ODUxMTQ1ODMsMjA5MDc5MzA3NjYzLDEzMTczMTkxNjg3OSwyNjAzNDg0ODk3LDIxMTM4NDQ2MDQyOSw2Njg2ODcxNDYwOSwyNjIwNjMwMTAxMSwxOTUwMzI2NjcwMDMsNjAwMzI1NCwxOTEzNDUxMjIxMzMsNjkxNDcyMzIwMTYsNjAwMjMyNiw3ODIxMTkzMzYxLDgyMDMxNjE0NDMxsAIB&sll=37.639837%2C55.734680&sspn=0.072708%2C0.040545&z=14.5">г. Москва,БЦ Аврора <br />
+								Садовническая ул., 82, стр. 2</a>
 						</li>
 						<li class="item-footer__item">
-							<a class="item-footer__link" target="_blank" href="https://yandex.ru/maps/11499/dubai/search/Mall%20of%20The%20Emirates%20Dubai%2C%20%D0%B3.%20%D0%94%D1%83%D0%B1%D0%B0%D0%B9%2C%20Al%20Barsha%20First%2C%20947/?filter=alternate_vertical%3ARequestWindow&indoorLevel=G&ll=55.201115%2C25.118690&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJSwUVVb9S6j8RuAN1yqMb2j8iBgABAgMEBSgKOABA61lIAWI6cmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvQ3VzdG9tTWF4YWR2L0VuYWJsZWQ9MWI6cmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvQ3VzdG9tTWF4YWR2L01heGFkdj0xNWJEcmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvQ3VzdG9tTWF4YWR2L1JlZ2lvbklkcz1bMSwxMDE3NF1iQHJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL01heGFkdlRvcE1peC9NYXhhZHZGb3JNaXg9MTBqAnJ1nQGPwvU8oAEAqAEAvQFtkGPdwgEMo7jCgK8EoKa13MsDggJATWFsbCBvZiBUaGUgRW1pcmF0ZXMgRHViYWksINCzLiDQlNGD0LHQsNC5LCBBbCBCYXJzaGEgRmlyc3QsIDk0N4oCAJICBTExNDk5mgIMZGVza3RvcC1tYXBzqgKgAjEwOTEzMDk3NzcwNSwxNTY5NzkxMzQwODcsMTQ2NTE4NzEyNjAsMjIxNDQwOTMwODg5LDkyODY4NDY3NTUsMzMzMzQ5OTY3MTIsMTk0MDYxMDE5OTc4LDExMDQ2MzU0Njk1MCwxNTk2MjkwNDE2MywxODM5MTE4NzY1MzgsMTIzMzI4MTkwNTc1LDIxODAzMDEzODA1MCwxNTkyOTczNzcxOTcsMTUzODA0ODQ1MDUsMTYxMDExMTEzOTAxLDExNDA5NjE0NDk2MiwyMjgzMjQzNzMzNSwyMDY4Nzk1ODI4MzcsMjI5MDIxMzQ0NjMyLDE1OTc3ODY2NzA4NiwxNDA4MTc5MjYyNDUsMzQ1NDkyODQ2OSwyNzk4MTk5NDQ5N7ACAQ%3D%3D&sll=55.201115%2C25.118690&sspn=0.014867%2C0.013377&z=16.79">Mall of The Emirates <br> Dubai, г. Дубай, Al Barsha First, 947</a>
+							<a class="item-footer__link" target="_blank" href="https://yandex.ru/maps/11499/dubai/search/Mall%20of%20The%20Emirates%20Dubai%2C%20%D0%B3.%20%D0%94%D1%83%D0%B1%D0%B0%D0%B9%2C%20Al%20Barsha%20First%2C%20947/?filter=alternate_vertical%3ARequestWindow&indoorLevel=G&ll=55.201115%2C25.118690&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJSwUVVb9S6j8RuAN1yqMb2j8iBgABAgMEBSgKOABA61lIAWI6cmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvQ3VzdG9tTWF4YWR2L0VuYWJsZWQ9MWI6cmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvQ3VzdG9tTWF4YWR2L01heGFkdj0xNWJEcmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvQ3VzdG9tTWF4YWR2L1JlZ2lvbklkcz1bMSwxMDE3NF1iQHJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL01heGFkdlRvcE1peC9NYXhhZHZGb3JNaXg9MTBqAnJ1nQGPwvU8oAEAqAEAvQFtkGPdwgEMo7jCgK8EoKa13MsDggJATWFsbCBvZiBUaGUgRW1pcmF0ZXMgRHViYWksINCzLiDQlNGD0LHQsNC5LCBBbCBCYXJzaGEgRmlyc3QsIDk0N4oCAJICBTExNDk5mgIMZGVza3RvcC1tYXBzqgKgAjEwOTEzMDk3NzcwNSwxNTY5NzkxMzQwODcsMTQ2NTE4NzEyNjAsMjIxNDQwOTMwODg5LDkyODY4NDY3NTUsMzMzMzQ5OTY3MTIsMTk0MDYxMDE5OTc4LDExMDQ2MzU0Njk1MCwxNTk2MjkwNDE2MywxODM5MTE4NzY1MzgsMTIzMzI4MTkwNTc1LDIxODAzMDEzODA1MCwxNTkyOTczNzcxOTcsMTUzODA0ODQ1MDUsMTYxMDExMTEzOTAxLDExNDA5NjE0NDk2MiwyMjgzMjQzNzMzNSwyMDY4Nzk1ODI4MzcsMjI5MDIxMzQ0NjMyLDE1OTc3ODY2NzA4NiwxNDA4MTc5MjYyNDUsMzQ1NDkyODQ2OSwyNzk4MTk5NDQ5N7ACAQ%3D%3D&sll=55.201115%2C25.118690&sspn=0.014867%2C0.013377&z=16.79">Mall of The Emirates <br />
+								Dubai, г. Дубай, Al Barsha First, 947</a>
 						</li>
 					</ul>
 					<div class="item-footer__group item-footer__group_center">
@@ -1892,6 +1946,11 @@
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7 4.1625C17.6375 2.1 14.8875 1 12 1C5.95 1 1 5.95 1 12C1 13.925 1.55001 15.85 2.51251 17.5L1 23L6.77502 21.4875C8.42502 22.3125 10.2125 22.8625 12 22.8625C18.05 22.8625 23 17.9125 23 11.8625C23 8.975 21.7625 6.225 19.7 4.1625ZM12 21.075C10.35 21.075 8.70001 20.6625 7.32501 19.8375L7.04999 19.7L3.61249 20.6625L4.57501 17.3625L4.29999 16.95C3.33749 15.4375 2.92499 13.7875 2.92499 12.1375C2.92499 7.1875 7.05 3.0625 12 3.0625C14.475 3.0625 16.675 4.025 18.4625 5.675C20.25 7.4625 21.075 9.6625 21.075 12.1375C21.075 16.95 17.0875 21.075 12 21.075ZM16.95 14.2C16.675 14.0625 15.3 13.375 15.025 13.375C14.75 13.2375 14.6125 13.2375 14.475 13.5125C14.3375 13.7875 13.7875 14.3375 13.65 14.6125C13.5125 14.75 13.375 14.75 13.1 14.75C12.825 14.6125 12 14.3375 10.9 13.375C10.075 12.6875 9.52501 11.725 9.38751 11.45C9.25001 11.175 9.38752 11.0375 9.52502 10.9C9.66252 10.7625 9.8 10.625 9.9375 10.4875C10.075 10.35 10.075 10.2125 10.2125 10.075C10.35 9.9375 10.2125 9.8 10.2125 9.6625C10.2125 9.525 9.66251 8.15 9.38751 7.6C9.25001 7.1875 8.97502 7.1875 8.83752 7.1875C8.70002 7.1875 8.56248 7.1875 8.28748 7.1875C8.14998 7.1875 7.87498 7.1875 7.59998 7.4625C7.32498 7.7375 6.63751 8.425 6.63751 9.8C6.63751 11.175 7.59999 12.4125 7.73749 12.6875C7.87499 12.825 9.66248 15.7125 12.4125 16.8125C14.75 17.775 15.1625 17.5 15.7125 17.5C16.2625 17.5 17.3625 16.8125 17.5 16.2625C17.775 15.575 17.775 15.025 17.6375 15.025C17.5 14.3375 17.225 14.3375 16.95 14.2Z" fill="white" />
 							</svg>
 						</a>
+						<a href="mailto:sale@neuroreach.ru" target="_blank" class="header__social-link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
 					</div>
 					<a href="#" class="footer__confidential item-footer__text">Политика конфиденциальности </a>
 					<a href="#" class="footer__copyright item-footer__text">© 2016-2026 <br />
@@ -1905,35 +1964,6 @@
 						<path d="M5.93018 9.57L12.0002 3.5L18.0702 9.57M12.0002 20.5L12.0002 3.67" stroke="#59EC65" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 					</svg>
 				</div>
-				<!-- <a href="#" class="footer__copyright"
-			>© 2016-2026 <br />
-			Zharkov Seo Agency</a
-		>
-		<div class="header__mail">
-			<a href="mailto:sale@neuroreach.ru" class="header__mail-link">sale@neuroreach.ru</a>
-		</div>
-		<div class="header__social">
-			<a href="https://t.me/neuro_reach" target="_blank" class="header__social-link">
-				<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M1.02438 7.43107L20.5348 0.0898489C21.4403 -0.229406 22.2312 0.305429 21.9378 1.64169L21.9395 1.64005L18.6175 16.9133C18.3713 17.9961 17.7119 18.2594 16.7895 17.7493L11.7307 14.1107L9.29059 16.4048C9.02079 16.6681 8.79314 16.8902 8.27039 16.8902L8.62957 11.8661L18.0054 3.60001C18.4134 3.24949 17.9143 3.05201 17.3764 3.40089L5.78985 10.5199L0.795043 8.99937C-0.289244 8.66366 -0.312852 7.94122 1.02438 7.43107V7.43107Z"
-						fill="white" />
-				</svg>
-			</a>
-			<a href="https://wa.me/79216440624" target="_blank" class="header__social-link">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M19.7 4.1625C17.6375 2.1 14.8875 1 12 1C5.95 1 1 5.95 1 12C1 13.925 1.55001 15.85 2.51251 17.5L1 23L6.77502 21.4875C8.42502 22.3125 10.2125 22.8625 12 22.8625C18.05 22.8625 23 17.9125 23 11.8625C23 8.975 21.7625 6.225 19.7 4.1625ZM12 21.075C10.35 21.075 8.70001 20.6625 7.32501 19.8375L7.04999 19.7L3.61249 20.6625L4.57501 17.3625L4.29999 16.95C3.33749 15.4375 2.92499 13.7875 2.92499 12.1375C2.92499 7.1875 7.05 3.0625 12 3.0625C14.475 3.0625 16.675 4.025 18.4625 5.675C20.25 7.4625 21.075 9.6625 21.075 12.1375C21.075 16.95 17.0875 21.075 12 21.075ZM16.95 14.2C16.675 14.0625 15.3 13.375 15.025 13.375C14.75 13.2375 14.6125 13.2375 14.475 13.5125C14.3375 13.7875 13.7875 14.3375 13.65 14.6125C13.5125 14.75 13.375 14.75 13.1 14.75C12.825 14.6125 12 14.3375 10.9 13.375C10.075 12.6875 9.52501 11.725 9.38751 11.45C9.25001 11.175 9.38752 11.0375 9.52502 10.9C9.66252 10.7625 9.8 10.625 9.9375 10.4875C10.075 10.35 10.075 10.2125 10.2125 10.075C10.35 9.9375 10.2125 9.8 10.2125 9.6625C10.2125 9.525 9.66251 8.15 9.38751 7.6C9.25001 7.1875 8.97502 7.1875 8.83752 7.1875C8.70002 7.1875 8.56248 7.1875 8.28748 7.1875C8.14998 7.1875 7.87498 7.1875 7.59998 7.4625C7.32498 7.7375 6.63751 8.425 6.63751 9.8C6.63751 11.175 7.59999 12.4125 7.73749 12.6875C7.87499 12.825 9.66248 15.7125 12.4125 16.8125C14.75 17.775 15.1625 17.5 15.7125 17.5C16.2625 17.5 17.3625 16.8125 17.5 16.2625C17.775 15.575 17.775 15.025 17.6375 15.025C17.5 14.3375 17.225 14.3375 16.95 14.2Z"
-						fill="white" />
-				</svg>
-			</a>
-		</div>
-		<div class="header__phone">
-			<a href="tel:+78002223821" class="header__phone-link"> 8 (800) 222-38-21 </a>
-			<span class="header__phone-text">звонок по России бесплатный</span>
-		</div> -->
 			</div>
 			<div class="footer__subscribe subscribe">
 				<div class="subscribe__close">
@@ -2024,7 +2054,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20260713092100"></script>
+	<script src="js/app.min.js?_v=20260721140538"></script>
 	<!-- <div id="loader">
 			<div class="loader__wrapper">
 				<div class="loader__content">
