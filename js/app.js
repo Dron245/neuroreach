@@ -2,7 +2,7 @@
     var __webpack_modules__ = {
         43: function(module) {
             /**
- * lightgallery | 2.9.0 | October 1st 2025
+ * lightgallery | 2.9.0-beta.1 | June 15th 2025
  * http://www.lightgalleryjs.com/
  * Copyright (c) 2020 Sachin Neravath;
  * @license GPLv3
@@ -732,7 +732,7 @@
             }
         }, 0);
         /*!
- * lightgallery | 2.9.0 | October 1st 2025
+ * lightgallery | 2.9.0-beta.1 | June 15th 2025
  * http://www.lightgalleryjs.com/
  * Copyright (c) 2020 Sachin Neravath;
  * @license GPLv3
